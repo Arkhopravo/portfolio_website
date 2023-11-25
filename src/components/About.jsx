@@ -45,7 +45,7 @@ const About = () => {
           <p className="text-gray-700">Gargi Memorial Institute Of Technology, 2023-24</p>
         </div>
         <div className="mt-8">
-        <p className="text-gray-700 mb-2">Higer Secondary Education from The Scottish Church Collegiate School, 2020</p>
+        <p className="text-gray-700 mb-2">Higher Secondary Education from The Scottish Church Collegiate School, 2019-20</p>
           
         </div>
       </div>
