@@ -41,11 +41,11 @@ const About = () => {
         </div>
         <div className="mt-8">
           <h3 className="text-xl lg:text-2xl font-bold mb-4">Education</h3>
-          <p className="text-gray-700 mb-2">Bachelor of Science in Computer Science and Engineering</p>
+          <p className="text-gray-700 mb-2">Bachelor of Technology in Computer Science and Engineering</p>
           <p className="text-gray-700">Gargi Memorial Institute Of Technology, 2023-24</p>
         </div>
         <div className="mt-8">
-        <p className="text-gray-700 mb-2">H.S. from The Scottish Church Collegiate School, 2020</p>
+        <p className="text-gray-700 mb-2">Higer Secendary Education from The Scottish Church Collegiate School, 2020</p>
           
         </div>
       </div>
