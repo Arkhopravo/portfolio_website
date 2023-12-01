@@ -13,7 +13,7 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-  <main>
+  <main className='font-serif'>
     {/* <Navbar/> */}
     <Home/>
     <About/>

@@ -8,8 +8,8 @@ const projects = [
     image: 'images/GuitarHarmonics.png', // Replace with the actual path to your project image
     // githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://guitar-harmionics.netlify.app/',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
-    technologies: ['React.js','TailwindCss', 'Node.js', 'MongoDB', 'Strapi'],
+    description: 'Open Source Guitar tutorial website uses for multiperpose, users can tune their guitars, can practice with matronome, can do shopping musical instruments here.',
+    technologies: ['React.js','TailwindCss', 'Node.js','Stripe', 'MongoDB'],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     image: 'images/TheNetwork.png', // Replace with the actual path to your project image
     githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://dashing-madeleine-71eb95.netlify.app/',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
+    description: 'Social Media website Fantastic UI design having user authentication, Dark and light mode facilites. Having post details here.',
     technologies: ['React.js','sccs', 'Node.js',],
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     image: 'images/FoodStore.png', // Replace with the actual path to your project image
     githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://food-store-aqjb.vercel.app/',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
+    description: 'Online Pizza and burger like foods delivery website  awsome UI desigin using Next.js 13. Clear and obersvable coding and implementations.',
     technologies: ['Nextjs', 'Tailwind Css'],
   },
   {
@@ -35,7 +35,7 @@ const projects = [
     image: 'images/HotelBooking.png', // Replace with the actual path to your project image
     githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://apsbooking.onrender.com/',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
+    description: 'Online MERN Stack Hotel Booking website. Containing User authentication information and hotel details in India and other hotels all over the world. Nice UI design with SASS and React, for server, MongoDB databases uses with Node.js backend server.',
     technologies: ['React.js', 'Node.js', 'MongoDB'],
 
   },
@@ -45,7 +45,7 @@ const projects = [
     image: 'images/Gericht.png', // Replace with the actual path to your project image
     githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://arkhopravo.github.io/NewReactJsWebsite//',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
+    description: 'My First Website in React.js. It concentrates mainly in Frontend UI design and development. Modern Hotel Website implementation with menu cards, hotel descriptions, address and contact details.',
     technologies: ['React.js'],
   },
   {
@@ -54,8 +54,8 @@ const projects = [
     image: 'images/apsheadphones.png', // Replace with the actual path to your project image
     githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://ecommerce-one-kappa.vercel.app/',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
-    technologies: ['Next.js', 'Sanity.io'],
+    description: 'My first ecommerce website in Next.js and Sanity.io. It focuses on mainly for frontend UI design with Nextjs and for the backend development it maily focuses on Sanity.io. With having full functionality for shopping with the payment processsing with Stripe.',
+    technologies: ['Next.js', 'Sanity.io', 'Stripe'],
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ const projects = [
     image: 'images/ShareMe.png', // Replace with the actual path to your project image
     githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://sharemeaps.netlify.app/login',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
+    description: 'Social Media  Photo Library where user can share their photogaphy with other users. This is a fantastic plateform to share photos with other users.',
     technologies: ['React.js', 'Sanity.io', 'TailwindCss'],
   },
   {
@@ -72,7 +72,7 @@ const projects = [
     image: 'images/3Dportfolio.png', // Replace with the actual path to your project image
     githubLink: 'https://github.com/yourusername/project1',
     websiteLink: 'https://arkhopravo-sarkar.netlify.app/',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...',
+    description: 'My first 3D portfolio website, mainly focused on three.js package and how the portfolio is designed.',
     technologies: ['React.js', 'Sanity.io', 'TailwindCss'],
   },
   

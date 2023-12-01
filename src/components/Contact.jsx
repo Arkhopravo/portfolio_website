@@ -31,7 +31,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 py-16 font-serif">
       <div className="container mx-auto">
         <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">Contact Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -40,8 +40,10 @@ const ContactMe = () => {
             <p className="text-gray-600 mb-4">
               I'm currently available for opportunities and collaborations. Feel free to reach out if you have any questions or just want to say hello!
             </p>
-            <p className="text-gray-600 mb-4">
-              Email: your.email@example.com
+            <p className="text-gray-600 mb-4 text-justify text-l font-serif">
+              Email: arkho.psarkar@gmail.com
+              <div/>
+              Phone: +91 9433355284
             </p>
             <img src="https://icmae.org/assets/img/get-in-touch.png" alt="" className='h-80 ' />
           </div>
