@@ -44,6 +44,10 @@ const ContactMe = () => {
               Email: arkho.psarkar@gmail.com
               <div/>
               Phone: +91 9433355284
+              <div/>
+              Github: https://github.com/Arkhopravo
+              <div/>
+              
             </p>
             <img src="https://icmae.org/assets/img/get-in-touch.png" alt="" className='h-80 ' />
           </div>
