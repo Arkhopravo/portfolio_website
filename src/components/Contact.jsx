@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import {Button} from './ui/button'
 const ContactMe = () => {
   // State to manage form data
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="bg-gray-100 py-16 font-serif">
+    <section className="border py-16 font-serif">
       <div className="container mx-auto">
         <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">Contact Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -98,12 +98,7 @@ const ContactMe = () => {
                 ></textarea>
               </div>
               {/* Submit Button */}
-              <button
-                type="submit"
-                className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
-              >
-                Send Message
-              </button>
+              <Button>Submit</Button>
             </form>
           </div>
         </div>

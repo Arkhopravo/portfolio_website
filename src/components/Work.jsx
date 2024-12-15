@@ -7,9 +7,9 @@ const projects = [
     title: 'Guitar Harmonics',
     image: 'images/GuitarHarmonics.png', // Replace with the actual path to your project image
     // githubLink: 'https://github.com/yourusername/project1',
-    websiteLink: 'https://guitar-harmionics.netlify.app/',
+    websiteLink: 'https://guitar-webservices.vercel.app/',
     description: 'Open Source Guitar tutorial website uses for multiperpose, users can tune their guitars, can practice with matronome, can do shopping musical instruments here.',
-    technologies: ['React.js','TailwindCss', 'Node.js','Stripe', 'MongoDB'],
+    technologies: ['NextJs','TailwindCss', 'Node.js','Stripe', 'MongoDB'],
   },
   {
     id: 2,
@@ -81,19 +81,19 @@ const projects = [
 
 const Work = () => {
   return (
-    <section className="bg-gray-800 text-white py-16">
+    <section className="border py-16">
     <div className="container mx-auto">
       <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
-          <div key={project.id} className="bg-gray-900 p-6 rounded-lg shadow-md">
+          <div key={project.id} className=" p-6 rounded-lg shadow-md">
             <img
               src={project.image}
               alt={project.title}
               className="h-40 w-full object-cover mb-4"
             />
-            <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-            <p className="text-gray-400 mb-4">{project.description}</p>
+            <h3 className="text-nase font-bold mb-2">{project.title}</h3>
+            <p className=" mb-4">{project.description}</p>
             <div className="flex justify-between items-center mb-4">
               {/* <a
                 href={project.githubLink}
@@ -116,7 +116,7 @@ const Work = () => {
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-gray-600 py-1 px-2 text-xs rounded-full"
+                  className="border shadow-md py-1 px-2 text-xs rounded-full"
                 >
                   {tech}
                 </span>

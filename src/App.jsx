@@ -16,9 +16,9 @@ function App() {
   <main className='font-serif'>
     {/* <Navbar/> */}
     <Home/>
+    <Experience/>
     <About/>
     
-    <Experience/>
     <Work/>
     <Testimonies/>
     <Contact/>
