@@ -1,54 +1,94 @@
 // src/components/About.js
 import React from 'react';
+import { Badge } from "./ui/badge";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import { Separator } from "./ui/separator";
+
+const skills = [
+  "React",
+  "Next.js",
+  "Node.js",
+  "React Native",
+  "HTML5",
+  "CSS3 / Sass",
+  "MongoDB",
+  "Express",
+  "REST APIs",
+  "Git & GitHub",
+  "Firebase",
+  "Figma",
+  "Canva",
+  "Blender",
+  "C/C++",
+  "Java",
+  "Python",
+  "SQL (Basic)",
+  "Flutter",
+  "Photoshop",
+  "Lightroom",
+];
 
 const About = () => {
   return (
-    <section className=" border py-16">
-      <div className="container mx-auto p-4 lg:p-8 border shadow-md rounded-lg">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-8">About Me</h2>
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 pr-0 lg:pr-8">
-            <p className="text-gray-700 mb-4">
-              Hi, I'm Arkhopravo Sarkar, a passionate Full Stack Developer based in Kolkata.
-              I am an ambitious and dedicated computer science and engineering fresher with a strong passion for technology and software development.
-              I am actively seeking opportunities to apply and expand my knowledge in a professional setting.
-            </p>
-            <p className="text-gray-700">
-              I have a solid foundation in web development and a keen interest in learning and adapting to new technologies with dedication.
-              My goal is to contribute to innovative projects and create meaningful solutions that make a positive impact.
-            </p>
+    <section id="about" className="scroll-mt-24">
+      <Card>
+        <CardHeader className="space-y-3">
+          <div>
+            <CardTitle>About</CardTitle>
+            <CardDescription>Short, focused, and recruiter-friendly.</CardDescription>
           </div>
-          <div className="lg:w-1/2 mt-4 lg:mt-0">
-            <h3 className="text-xl lg:text-2xl font-bold mb-4">Skills</h3>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>JavaScript (Reactjs, Nextjs, Node.js, React Native)</li>
-              <li>HTML5, CSS3 (Sass/SCSS)</li>
-              <li>MongoDB, Express.js</li>
-              <li>RESTful API Development</li>
-              <li>Git, GitHub</li>
-              <li>Firebase</li>
-              <li>Figma(Designing app and website model)</li>
-              <li>Canva</li>
-              <li>Blender(3D model making)</li>
-              <li>C/C++, Java, python3 (Academics Learning)</li>
-              <li>SQL (Basic) </li>
-              <li>Flutter Development</li>
-              <li>Adobe Photoshop and Adobe Lightroom</li>
-              
-              {/* Add more skills as needed */}
-            </ul>
+          <Separator />
+        </CardHeader>
+
+        <CardContent>
+          <div className="grid gap-6 md:grid-cols-[1fr_260px]">
+            <div className="space-y-3">
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                I’m a Full Stack Developer based in Kolkata with a strong
+                foundation in modern web development. I enjoy building clean,
+                reliable user experiences and practical backend services.
+              </p>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                I’m actively looking for opportunities where I can contribute
+                to real products, learn from a strong team, and ship meaningful
+                features.
+              </p>
+
+              <div className="pt-2">
+                <div className="text-sm font-medium">Education</div>
+                <div className="mt-2 space-y-1 text-sm text-muted-foreground">
+                  <div>
+                    Bachelor of Technology (CSE) • Gargi Memorial Institute Of
+                    Technology
+                  </div>
+                  <div className="text-xs">2023 — 2024</div>
+                  <div className="pt-2">
+                    Higher Secondary • The Scottish Church Collegiate School
+                  </div>
+                  <div className="text-xs">2019 — 2020</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-lg border bg-background p-4">
+              <div className="text-sm font-medium">Skills</div>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <Badge key={skill} variant="secondary">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="mt-8">
-          <h3 className="text-xl lg:text-2xl font-bold mb-4">Education</h3>
-          <p className="text-gray-700 mb-2">Bachelor of Technology in Computer Science and Engineering</p>
-          <p className="text-gray-700">Gargi Memorial Institute Of Technology, 2023-24</p>
-        </div>
-        <div className="mt-8">
-        <p className="text-gray-700 mb-2">Higher Secondary Education from The Scottish Church Collegiate School, 2019-20</p>
-          
-        </div>
-      </div>
+        </CardContent>
+      </Card>
     </section>
   );
 };

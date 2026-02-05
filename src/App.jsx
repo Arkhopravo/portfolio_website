@@ -2,27 +2,22 @@
 import React from 'react';
 import Home from './components/Home';
 import About from './components/About';
-import Navbar from './components/Navbar';
-
-import Testimonies from './components/Testimonies';
 import Contact from './components/Contact';
 import Work from './components/Work';
 import Experience from './components/Experience';
+import Shell from './components/Shell';
 
 
 
 function App() {
   return (
-  <main className='font-serif'>
-    {/* <Navbar/> */}
-    <Home/>
-    <Experience/>
-    <About/>
-    
-    <Work/>
-    <Testimonies/>
-    <Contact/>
-  </main>
+    <Shell>
+      <Home />
+      <Experience />
+      <About />
+      <Work />
+      <Contact />
+    </Shell>
   );
 }
 
