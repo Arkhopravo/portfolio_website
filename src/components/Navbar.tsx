@@ -1,4 +1,4 @@
-// src/components/Navbar.js
+// Converted to TSX (minimal typing)
 import React from 'react';
 import {
   Menubar,
@@ -16,9 +16,8 @@ import {
   MenubarTrigger,
 } from "./ui/menubar"
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
   return (
-    
     <nav className=" p-4 shadow-md fixed w-full bg-white z-50">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
         <div className="flex items-center mb-4 lg:mb-0">
@@ -45,8 +44,6 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-
-
   );
 };
 

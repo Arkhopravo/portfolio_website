@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
-// import { Separator } from "./ui/separator";
+
+type Props = { children?: React.ReactNode };
 
 const navItems = [
   { href: "#overview", label: "Overview" },
@@ -10,7 +11,7 @@ const navItems = [
   { href: "#contact", label: "Contact" },
 ];
 
-const Shell = ({ children }) => {
+const Shell = ({ children }: Props) => {
   return (
     <div className="min-h-screen bg-muted/30">
       <aside className="hidden md:fixed md:inset-y-0 md:left-0 md:flex md:w-64 md:flex-col md:border-r md:bg-background">
@@ -20,7 +21,6 @@ const Shell = ({ children }) => {
             Arkhopravo Sarkar
           </div>
           <div className="mt-1 text-xs text-muted-foreground">Full Stack Developer</div>
-          {/* <Separator className="my-4" /> */}
           <nav className="flex flex-col gap-1">
             {navItems.map((item) => (
               <Button
@@ -36,7 +36,6 @@ const Shell = ({ children }) => {
         </div>
 
         <div className="mt-auto p-6">
-          {/* <Separator className="mb-4" /> */}
           <div className="space-y-1 text-xs text-muted-foreground">
             <div>
               <a

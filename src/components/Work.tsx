@@ -84,7 +84,7 @@ const projects = [
   },
 ];
 
-const Work = () => {
+const Work = (): JSX.Element => {
   return (
     <section id="projects" className="scroll-mt-24">
       <Card>

@@ -9,16 +9,14 @@ import {
 } from "./ui/card";
 import { Separator } from "./ui/separator";
 
-const ContactMe = () => {
-  // State to manage form data
+const ContactMe = (): JSX.Element => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
 
-  // Handle form input changes
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -26,12 +24,9 @@ const ContactMe = () => {
     });
   };
 
-  // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Add logic to handle form submission, e.g., send an email or store data
     console.log('Form submitted:', formData);
-    // Clear form after submission
     setFormData({
       name: '',
       email: '',
@@ -63,19 +58,19 @@ const ContactMe = () => {
 
               <div className="mt-4 space-y-2 text-sm">
                 <div>
-                  <span className="text-muted-foreground">Email:</span>{" "}
+                  <span className="text-muted-foreground">Email:</span>{' '}
                   <a className="hover:underline" href="mailto:arkho.psarkar@gmail.com">
                     arkho.psarkar@gmail.com
                   </a>
                 </div>
                 <div>
-                  <span className="text-muted-foreground">Phone:</span>{" "}
+                  <span className="text-muted-foreground">Phone:</span>{' '}
                   <a className="hover:underline" href="tel:+919433355284">
                     +91 9433355284
                   </a>
                 </div>
                 <div>
-                  <span className="text-muted-foreground">GitHub:</span>{" "}
+                  <span className="text-muted-foreground">GitHub:</span>{' '}
                   <a
                     className="hover:underline"
                     href="https://github.com/Arkhopravo"

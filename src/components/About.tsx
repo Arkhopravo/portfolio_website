@@ -1,4 +1,4 @@
-// src/components/About.js
+// src/components/About.tsx
 import React from 'react';
 import { Badge } from "./ui/badge";
 import {
@@ -34,7 +34,7 @@ const skills = [
   "Lightroom",
 ];
 
-const About = () => {
+const About = (): JSX.Element => {
   return (
     <section id="about" className="scroll-mt-24">
       <Card>
